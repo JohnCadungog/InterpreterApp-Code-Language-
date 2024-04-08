@@ -10,12 +10,12 @@ namespace InterpreterApp.Analysis.Table
 {
     public class VariableTable
     {
-        private Dictionary<string, KeyValuePair<DataType, object>> variable_table;
+        private Dictionary<string, KeyValuePair<DataType, object> > variable_table;
         public VariableTable()
         {
             variable_table = new Dictionary<string, KeyValuePair<DataType, object>>();
         }
-
+         
         public void AddVariable(string identifier, DataType data_type, object val)
         {
             variable_table.Add(identifier, new KeyValuePair<DataType, object>(data_type, val));

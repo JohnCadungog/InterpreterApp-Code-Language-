@@ -1,5 +1,13 @@
 
+
 BEGIN CODE
-INT X=5*5
-DISPLAY: X
+    INT harold = 5*5+1*9
+
+    DISPLAY: harold & "OLDVALUE:"
+    harold = harold + 50    
+
+    DISPLAY: harold
 END CODE
+
+
+

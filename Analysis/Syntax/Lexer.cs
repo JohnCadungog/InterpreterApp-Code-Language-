@@ -278,7 +278,7 @@ namespace InterpreterApp.Analysis.Syntax
             string text = _code.Substring(start, length);
             object val = null;
 
-            string escape_sequence_pattern = @"^\[[\]\[\&\$\#]\]$";
+            string escape_sequence_pattern = @"\[[\]\[\&\$\#]\]$";
             Regex escape_regex = new Regex(escape_sequence_pattern);
 
             if (escape_regex.IsMatch(text))
